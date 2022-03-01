@@ -1,0 +1,26 @@
+name: libcamera-apps
+type: sw.application
+description: >-
+  Raspberry Pi Foundation's new camera stack
+assets:
+  repository:
+    type: blob.asset
+    data:
+      url: ''
+  logo:
+    type: blob.asset
+    data:
+      url: ''        
+data:
+  applicationConfigVariables:
+    - BALENA_HOST_CONFIG_gpu_mem: 64
+    - BALENA_HOST_CONFIG_dtoverlay: "vc4-kms-v3d"
+    - BALENA_HOST_CONFIG_camera_auto_detect: 1
+  defaultDeviceType: raspberry-pi
+  supportedDeviceTypes:
+    - raspberry-pi
+    - raspberry-pi2
+    - raspberrypi3
+    - raspberrypi4-64
+    - fincm3
+version: 0.1.0
