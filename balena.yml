@@ -13,9 +13,10 @@ assets:
       url: ''        
 data:
   applicationConfigVariables:
-    - BALENA_HOST_CONFIG_gpu_mem: 64
+    - BALENA_HOST_CONFIG_gpu_mem: 128
     - BALENA_HOST_CONFIG_dtoverlay: "vc4-kms-v3d"
     - BALENA_HOST_CONFIG_camera_auto_detect: 1
+    - BALENA_HOST_CONFIG_max_framebuffers: 2
   defaultDeviceType: raspberry-pi
   supportedDeviceTypes:
     - raspberry-pi
